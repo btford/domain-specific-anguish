@@ -7,26 +7,13 @@ A DSL for making cute partially-applied DSLs.
 ```javascript
 var anguish = require('domain-specific-anguish');
 
-var after = anguish(function after_OBJ_PROP_isDefinedDo_FN (obj, prop, fn) {
-  var desc = Object.getOwnPropertyDescriptor(obj, prop) || {};
-  desc.onfigurable = true;
-  desc.set = function (val) {
-    unSet();
-    obj[prop] = val;
-    fn();
-  };
-  Object.defineProperty(obj, prop, desc);
-  function unSet() {
-    delete desc.set;
-    Object.defineProperty(obj, prop, desc);
-  }
+// let's make a fancy add function
+var add = anguish(function after_ONE_TWO_and_also_THREE (one, two, three) {
+  return one + two + three;
 });
 
-after(x, 'y').isDefined(function () {
-  console.log('hi');
-});
-
-x.y = 3; // console.log => 'hi'
+add(1, 2).and.also(3);
+// returns 6
 ```
 
 ## License

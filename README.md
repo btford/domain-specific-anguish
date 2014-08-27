@@ -1,4 +1,4 @@
-# domain-specific-anguish
+# domain-specific-anguish [![Build Status](https://travis-ci.org/btford/domain-specific-anguish.svg?branch=master)](https://travis-ci.org/btford/domain-specific-anguish)
 
 A DSL for making cute partially-applied DSLs.
 

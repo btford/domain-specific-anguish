@@ -1,0 +1,25 @@
+{
+  "name": "domain-specific-anguish",
+  "version": "0.0.0",
+  "description": "A DSL for making partially-applied DSLs",
+  "main": "anguish.js",
+  "scripts": {
+    "test": "jasmine-node *.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/btford/domain-specific-anguish.git"
+  },
+  "keywords": [
+    "post-modernism"
+  ],
+  "author": "Brian Ford <btford@umich.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/btford/domain-specific-anguish/issues"
+  },
+  "homepage": "https://github.com/btford/domain-specific-anguish",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
